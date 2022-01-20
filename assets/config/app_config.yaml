@@ -1,0 +1,2 @@
+debug_api_url: "https://api.openweathermap.org/data/2.5/"
+release_api_url: "https://api.openweathermap.org/data/2.5/"

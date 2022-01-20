@@ -1,0 +1,17 @@
+{
+  "@@locale": "en",
+  "noRoute": "No Route founded for : ",
+  "confirm": "Confirm ",
+  "enterCityName": "Enter City Name ",
+  "yourCity": "City: ",
+  "temperature": "Temperature: ",
+  "humidity": "Humidity: ",
+  "windSpeed": "Wind speed: ",
+  "dataRetrievalError": "Data retrieval error",
+  "mainWeather": "Main weather: ",
+  "tempInDay":  "Temperature in day: ",
+  "genericError":  "Data retrieval error",
+  "noInternetConnection":  "No Internet connection",
+  "internetConnectionBack":  "Internet connection back"
+
+}

@@ -1,0 +1,17 @@
+{
+  "@@locale": "ru",
+  "noRoute": "Маршрут не установлен для:",
+  "confirm": "Подтвердить ",
+  "enterCityName": "Введите название города ",
+  "yourCity": "Город: ",
+  "temperature": "Температура: ",
+  "humidity": "Влажность: ",
+  "windSpeed": "Ветра: ",
+  "dataRetrievalError": "Ошибка получения данных",
+  "mainWeather": "Погода: ",
+  "tempInDay":  "Темп днем: ",
+  "genericError":  "Ошибка получения данных",
+  "noInternetConnection":  "Нет соединения с интернетом",
+  "internetConnectionBack":  "подключение к интернету обратно"
+
+}

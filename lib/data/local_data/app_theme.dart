@@ -61,4 +61,8 @@ extension ThemeExtras on ThemeData {
   Color get appBarBackgroundColor => brightness == Brightness.light
       ? AppColors.lightAppBarBackgroundColor
       : AppColors.darkAappBarBackgroundColor;
+
+  Color get successColor => brightness == Brightness.light
+      ? AppColors.lightSuccessColor
+      : AppColors.darkSuccessColor;
 }

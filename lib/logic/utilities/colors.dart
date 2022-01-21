@@ -15,6 +15,7 @@ class AppColors {
       Colors.deepPurpleAccent;
   static const MaterialAccentColor darkAappBarBackgroundColor =
       Colors.greenAccent;
+  static const MaterialAccentColor darkSuccessColor = Colors.greenAccent;
 
   ///Light colors
   static final HexColor lightModeBackgroundColor = HexColor("#FFFFFF");
@@ -26,4 +27,5 @@ class AppColors {
   static final HexColor lightBtnNavigationBackgroundColor = HexColor("#CCCCCC");
   static const MaterialColor lightConfirmBtnTextColor = Colors.deepPurple;
   static const MaterialColor lightAppBarBackgroundColor = Colors.green;
+  static const MaterialColor lightSuccessColor = Colors.green;
 }

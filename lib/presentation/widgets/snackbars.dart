@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:friflex_test/data/local_data/app_theme.dart';
 import 'package:friflex_test/generated/l10n.dart';
 import 'package:friflex_test/presentation/widgets/custom_snackbar.dart';
 
@@ -6,7 +7,7 @@ class SnackBars {
   static showSuccess(BuildContext context, String text) {
     SnackBar snackBar = CustomSnackBar(
       context: context,
-      backgroundColor: Colors.green,
+      backgroundColor: Theme.of(context).successColor,
       icon: const Icon(Icons.thumb_up),
       text: text,
     );
@@ -21,7 +22,7 @@ class SnackBars {
     SnackBar snackBar = CustomSnackBar(
       context: context,
       icon: const Icon(Icons.error),
-      backgroundColor: Colors.red,
+      backgroundColor: Theme.of(context).errorColor,
       text: text,
     );
     showSnackBar(context, snackBar);

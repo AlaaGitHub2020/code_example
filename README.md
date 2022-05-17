@@ -1,4 +1,4 @@
-# friflex_test
+# code_example
 
 A new Flutter project.
 

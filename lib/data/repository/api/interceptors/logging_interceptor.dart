@@ -1,4 +1,4 @@
-import 'package:code_example/logic/logger/simple_log_printer.dart';
+import 'package:code_example/domain/core/utilities/logger/simple_log_printer.dart';
 import 'package:dio/dio.dart';
 import 'package:logger/logger.dart';
 

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:code_example/data/repository/api/interceptors/logging_interceptor.dart';
-import 'package:code_example/logic/utilities/config.dart';
+import 'package:code_example/domain/core/utilities/config.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 

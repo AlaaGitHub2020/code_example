@@ -14,16 +14,16 @@ Forecast _$ForecastFromJson(Map<String, dynamic> json) => Forecast(
       json['current'] == null
           ? null
           : Current.fromJson(json['current'] as Map<String, dynamic>),
-      (json['minutely'] as List<dynamic>)
-          .map((e) =>
+      (json['minutely'] as List<dynamic>?)
+          ?.map((e) =>
               e == null ? null : Minutely.fromJson(e as Map<String, dynamic>))
           .toList(),
-      (json['hourly'] as List<dynamic>)
-          .map((e) =>
+      (json['hourly'] as List<dynamic>?)
+          ?.map((e) =>
               e == null ? null : Hourly.fromJson(e as Map<String, dynamic>))
           .toList(),
-      (json['daily'] as List<dynamic>)
-          .map((e) =>
+      (json['daily'] as List<dynamic>?)
+          ?.map((e) =>
               e == null ? null : Daily.fromJson(e as Map<String, dynamic>))
           .toList(),
     );

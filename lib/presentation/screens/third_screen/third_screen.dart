@@ -1,5 +1,5 @@
+import 'package:code_example/presentation/screens/third_screen/third_screen_body.dart';
 import 'package:flutter/material.dart';
-import 'package:friflex_test/presentation/screens/third_screen/third_screen_body.dart';
 
 class ThirdScreen extends StatelessWidget {
   static const routeName = '/ThirdScreen';

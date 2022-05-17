@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
-import 'package:friflex_test/data/modules/weather_info.dart';
-import 'package:friflex_test/data/repository/api/city_weather_data_repository.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
+import 'package:code_example/data/modules/weather_info.dart';
+import 'package:code_example/data/repository/api/city_weather_data_repository.dart';
+import 'package:code_example/logic/logger/simple_log_printer.dart';
 import 'package:meta/meta.dart';
 
 part 'weather_data_state.dart';

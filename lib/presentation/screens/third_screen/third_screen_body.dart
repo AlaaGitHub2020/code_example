@@ -1,11 +1,11 @@
+import 'package:code_example/data/local_data/local_helper.dart';
+import 'package:code_example/generated/l10n.dart';
+import 'package:code_example/logic/blocs/cubits/forecast_data_cubit/forecast_data_cubit.dart';
+import 'package:code_example/logic/logger/simple_log_printer.dart';
+import 'package:code_example/presentation/widgets/city_3_days_forecast_info.dart';
+import 'package:code_example/presentation/widgets/snackbars.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:friflex_test/data/local_data/local_helper.dart';
-import 'package:friflex_test/generated/l10n.dart';
-import 'package:friflex_test/logic/blocs/cubits/forecast_data_cubit/forecast_data_cubit.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
-import 'package:friflex_test/presentation/widgets/city_3_days_forecast_info.dart';
-import 'package:friflex_test/presentation/widgets/snackbars.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ThirdScreenBody extends StatefulWidget {
@@ -67,19 +67,18 @@ class _ThirdScreenBodyState extends State<ThirdScreenBody> {
     return Center(
       child: ListView.builder(
         // itemCount: forecastDataState.forecastInfo.daily.length,
-        ///you asked for only 3 days
         itemCount: 3,
         shrinkWrap: true,
         itemBuilder: (BuildContext context, int index) {
           for (int x = 0;
-              x < forecastDataState.forecastInfo.daily.length;
+              x < forecastDataState.forecastInfo.daily!.length;
               x++) {
-            forecastDataState.forecastInfo.daily.sort((a, b) {
+            forecastDataState.forecastInfo.daily!.sort((a, b) {
               return a!.temp!.day!.compareTo(b!.temp!.day!);
             });
           }
           return City3DaysForecastInfo(
-            dailyData: forecastDataState.forecastInfo.daily[index],
+            dailyData: forecastDataState.forecastInfo.daily![index],
           );
         },
       ),

@@ -1,4 +1,4 @@
-import 'package:friflex_test/data/modules/weather.dart';
+import 'package:code_example/data/modules/weather.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'hourly.g.dart';
@@ -42,7 +42,7 @@ class Hourly {
   num? windGust;
 
   @JsonKey(name: "weather")
-  List<Weather?> weather;
+  List<Weather?>? weather;
 
   @JsonKey(name: "pop")
   num? pop;

@@ -1,5 +1,5 @@
+import 'package:code_example/logic/utilities/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:friflex_test/logic/utilities/colors.dart';
 
 class AppTheme {
   const AppTheme._();

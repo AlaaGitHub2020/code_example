@@ -1,7 +1,8 @@
+import 'package:code_example/data/local_data/strings.dart';
+import 'package:code_example/data/modules/weather_info.dart';
+import 'package:code_example/logic/logger/simple_log_printer.dart';
 import 'package:dio/dio.dart';
-import 'package:friflex_test/data/local_data/strings.dart';
-import 'package:friflex_test/data/modules/weather_info.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
+
 import 'api_repository.dart';
 
 class CityWeatherDataRepository {

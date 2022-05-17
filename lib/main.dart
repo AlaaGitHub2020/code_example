@@ -1,26 +1,22 @@
+import 'package:code_example/data/local_data/local_helper.dart';
+import 'package:code_example/data/local_data/strings.dart';
+import 'package:code_example/data/repository/api/api_repository.dart';
+import 'package:code_example/data/repository/api/city_forecast_data_repository.dart';
+import 'package:code_example/data/repository/api/city_weather_data_repository.dart';
+import 'package:code_example/generated/l10n.dart';
+import 'package:code_example/logic/blocs/cubits/forecast_data_cubit/forecast_data_cubit.dart';
+import 'package:code_example/logic/blocs/cubits/theme_cubit/theme_cubit.dart';
+import 'package:code_example/logic/blocs/cubits/weather_data_cubit/weather_data_cubit.dart';
+import 'package:code_example/logic/logger/simple_log_printer.dart';
+import 'package:code_example/routes.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:friflex_test/data/local_data/local_helper.dart';
-import 'package:friflex_test/data/local_data/strings.dart';
-import 'package:friflex_test/data/repository/api/api_repository.dart';
-import 'package:friflex_test/data/repository/api/city_forecast_data_repository.dart';
-import 'package:friflex_test/data/repository/api/city_weather_data_repository.dart';
-import 'package:friflex_test/generated/l10n.dart';
-import 'package:friflex_test/logic/blocs/cubits/forecast_data_cubit/forecast_data_cubit.dart';
-import 'package:friflex_test/logic/blocs/cubits/internet_connection_cubit/internet_connection_cubit.dart';
-import 'package:friflex_test/logic/blocs/cubits/theme_cubit/theme_cubit.dart';
-import 'package:friflex_test/logic/blocs/cubits/weather_data_cubit/weather_data_cubit.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
-import 'package:friflex_test/routes.dart';
 import 'package:sizer/sizer.dart';
 
 import 'logic/blocs/cubits/internet_connection_cubit/internet_connection_cubit.dart';
-
-//todo : please note this : I'll not add the comments to explain the code because I'm sure my code is clear even for junior developer to understand it
-//todo :  I tried to make it clear and readable as much as possible in the frame time you give to me
 
 final log = getLogger();
 
@@ -111,7 +107,6 @@ class _FriFlexState extends State<FriFlex> {
           GlobalWidgetsLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,
         ],
-        // ignore: missing_return
         localeResolutionCallback: (deviceLocale, supportedLocales) {
           for (var locale in supportedLocales) {
             if (locale.languageCode == deviceLocale!.languageCode &&
@@ -119,6 +114,7 @@ class _FriFlexState extends State<FriFlex> {
               return locale;
             }
           }
+          return null;
         },
       );
     });

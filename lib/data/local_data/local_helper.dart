@@ -1,8 +1,8 @@
+import 'package:code_example/logic/logger/simple_log_printer.dart';
+import 'package:code_example/logic/utilities/config.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
-import 'package:friflex_test/logic/utilities/config.dart';
 import 'package:logger/logger.dart';
 import 'package:sizer/sizer.dart';
 

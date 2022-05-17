@@ -1,14 +1,14 @@
+import 'package:code_example/data/local_data/app_theme.dart';
+import 'package:code_example/data/local_data/strings.dart';
+import 'package:code_example/generated/l10n.dart';
+import 'package:code_example/logic/blocs/cubits/weather_data_cubit/weather_data_cubit.dart';
+import 'package:code_example/logic/logger/simple_log_printer.dart';
+import 'package:code_example/presentation/screens/second_screen/second_screen.dart';
+import 'package:code_example/presentation/widgets/custom_navigation_button.dart';
+import 'package:code_example/presentation/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
-import 'package:friflex_test/data/local_data/strings.dart';
-import 'package:friflex_test/generated/l10n.dart';
-import 'package:friflex_test/logic/blocs/cubits/weather_data_cubit/weather_data_cubit.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
-import 'package:friflex_test/presentation/screens/second_screen/second_screen.dart';
-import 'package:sizer/sizer.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:friflex_test/data/local_data/app_theme.dart';
-import 'package:friflex_test/presentation/widgets/custom_navigation_button.dart';
-import 'package:friflex_test/presentation/widgets/custom_text_field.dart';
+import 'package:sizer/sizer.dart';
 
 class FirstScreenBody extends StatefulWidget {
   const FirstScreenBody({Key? key}) : super(key: key);

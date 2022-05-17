@@ -1,6 +1,6 @@
+import 'package:code_example/data/local_data/strings.dart';
+import 'package:code_example/logic/logger/simple_log_printer.dart';
 import 'package:flutter/services.dart';
-import 'package:friflex_test/data/local_data/strings.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
 import "package:yaml/yaml.dart";
 
 class Config {

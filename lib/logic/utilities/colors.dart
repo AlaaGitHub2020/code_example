@@ -1,5 +1,5 @@
+import 'package:code_example/logic/utilities/hex_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:friflex_test/logic/utilities/hex_colors.dart';
 
 ///the app colors here
 class AppColors {

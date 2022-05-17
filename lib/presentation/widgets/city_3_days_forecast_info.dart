@@ -1,8 +1,8 @@
+import 'package:code_example/data/local_data/app_theme.dart';
+import 'package:code_example/data/modules/daily.dart';
+import 'package:code_example/generated/l10n.dart';
 import 'package:flutter/material.dart';
-import 'package:friflex_test/data/modules/daily.dart';
-import 'package:friflex_test/generated/l10n.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:friflex_test/data/local_data/app_theme.dart';
 
 class City3DaysForecastInfo extends StatelessWidget {
   final Daily? dailyData;
@@ -54,7 +54,7 @@ class City3DaysForecastInfo extends StatelessWidget {
 
   Text buildMainWeather(BuildContext context) {
     return Text(
-      S.of(context).mainWeather + dailyData!.weather[0]!.main!,
+      S.of(context).mainWeather + dailyData!.weather![0]!.main!,
       style: GoogleFonts.montserrat(
         color: Theme.of(context).confirmBtnTextColor,
       ),

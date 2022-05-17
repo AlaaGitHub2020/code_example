@@ -9,6 +9,12 @@
 .buildlog/
 .history
 .svn/
+*.freezed.dart
+*.g.dart
+*.gr.dart
+google-services.json
+firebase_options.dart
+*.config.dart
 
 /lib/generated/
 

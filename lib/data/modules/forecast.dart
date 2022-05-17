@@ -1,7 +1,7 @@
-import 'package:friflex_test/data/modules/current.dart';
-import 'package:friflex_test/data/modules/daily.dart';
-import 'package:friflex_test/data/modules/hourly.dart';
-import 'package:friflex_test/data/modules/minutely.dart';
+import 'package:code_example/data/modules/current.dart';
+import 'package:code_example/data/modules/daily.dart';
+import 'package:code_example/data/modules/hourly.dart';
+import 'package:code_example/data/modules/minutely.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'forecast.g.dart';
@@ -24,13 +24,13 @@ class Forecast {
   Current? current;
 
   @JsonKey(name: "minutely")
-  List<Minutely?> minutely;
+  List<Minutely?>? minutely;
 
   @JsonKey(name: "hourly")
-  List<Hourly?> hourly;
+  List<Hourly?>? hourly;
 
   @JsonKey(name: "daily")
-  List<Daily?> daily;
+  List<Daily?>? daily;
 
   Forecast(
     this.lat,

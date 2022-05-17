@@ -1,11 +1,11 @@
+import 'package:code_example/data/local_data/app_theme.dart';
+import 'package:code_example/data/local_data/local_helper.dart';
+import 'package:code_example/generated/l10n.dart';
+import 'package:code_example/logic/blocs/cubits/weather_data_cubit/weather_data_cubit.dart';
+import 'package:code_example/logic/logger/simple_log_printer.dart';
+import 'package:code_example/presentation/widgets/snackbars.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:friflex_test/data/local_data/app_theme.dart';
-import 'package:friflex_test/data/local_data/local_helper.dart';
-import 'package:friflex_test/generated/l10n.dart';
-import 'package:friflex_test/logic/blocs/cubits/weather_data_cubit/weather_data_cubit.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
-import 'package:friflex_test/presentation/widgets/snackbars.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 

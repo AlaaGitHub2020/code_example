@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
+import 'package:code_example/logic/logger/simple_log_printer.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:meta/meta.dart';
 

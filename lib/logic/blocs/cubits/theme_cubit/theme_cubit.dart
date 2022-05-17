@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
+import 'package:code_example/data/local_data/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:friflex_test/data/local_data/app_theme.dart';
 
 part 'theme_state.dart';
 

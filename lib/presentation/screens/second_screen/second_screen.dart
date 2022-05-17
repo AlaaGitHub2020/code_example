@@ -1,6 +1,6 @@
+import 'package:code_example/presentation/screens/second_screen/second_screen_appbar.dart';
+import 'package:code_example/presentation/screens/second_screen/second_screen_body.dart';
 import 'package:flutter/material.dart';
-import 'package:friflex_test/presentation/screens/second_screen/second_screen_appbar.dart';
-import 'package:friflex_test/presentation/screens/second_screen/second_screen_body.dart';
 
 class SecondScreen extends StatelessWidget {
   static const routeName = '/SecondScreen';

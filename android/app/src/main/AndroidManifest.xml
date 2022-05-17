@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.friflex.friflex_test">
+    package="com.alaa_mashkouk.code_example">
    <application
         android:label="friflex_test"
         android:name="${applicationName}"

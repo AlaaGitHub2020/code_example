@@ -1,5 +1,5 @@
+import 'package:code_example/presentation/screens/first_screen/first_screen_body.dart';
 import 'package:flutter/material.dart';
-import 'package:friflex_test/presentation/screens/first_screen/first_screen_body.dart';
 
 class FirstScreen extends StatelessWidget {
   static const routeName = '/';

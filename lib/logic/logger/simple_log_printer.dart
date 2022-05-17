@@ -1,4 +1,5 @@
-import 'package:friflex_test/logic/logger/stack_trace_fromatter.dart';
+import 'package:code_example/logic/logger/stack_trace_fromatter.dart';
+import 'package:flutter/foundation.dart';
 import 'package:logger/logger.dart';
 
 Logger getLogger() {
@@ -18,7 +19,9 @@ class SimpleLogPrinter extends LogPrinter {
 
       String method =
           StackTraceFormatter.formatStackTrace(StackTrace.current, 2, 1)!;
-      print(color!("$emoji | $method | ${event.message}"));
+      if (kDebugMode) {
+        print(color!("$emoji | $method | ${event.message}"));
+      }
       return [];
     } catch (e) {
       return [];

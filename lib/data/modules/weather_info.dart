@@ -1,10 +1,10 @@
-import 'package:friflex_test/data/modules/clouds.dart';
-import 'package:friflex_test/data/modules/coord.dart';
-import 'package:friflex_test/data/modules/main_info.dart';
-import 'package:friflex_test/data/modules/rain.dart';
-import 'package:friflex_test/data/modules/sys.dart';
-import 'package:friflex_test/data/modules/weather.dart';
-import 'package:friflex_test/data/modules/wind.dart';
+import 'package:code_example/data/modules/clouds.dart';
+import 'package:code_example/data/modules/coord.dart';
+import 'package:code_example/data/modules/main_info.dart';
+import 'package:code_example/data/modules/rain.dart';
+import 'package:code_example/data/modules/sys.dart';
+import 'package:code_example/data/modules/weather.dart';
+import 'package:code_example/data/modules/wind.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'weather_info.g.dart';
@@ -15,7 +15,7 @@ class WeatherInfo {
   Coord? coord;
 
   @JsonKey(name: "weather")
-  List<Weather?> weather;
+  List<Weather?>? weather;
 
   @JsonKey(name: "base")
   String? base;

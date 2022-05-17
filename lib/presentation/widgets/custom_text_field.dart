@@ -1,9 +1,9 @@
+import 'package:code_example/data/local_data/app_theme.dart';
+import 'package:code_example/data/local_data/local_helper.dart';
+import 'package:code_example/logic/utilities/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:friflex_test/data/local_data/local_helper.dart';
-import 'package:friflex_test/logic/utilities/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
-import 'package:friflex_test/data/local_data/app_theme.dart';
 
 class CustomTextField extends StatefulWidget {
   final String? Function(String?)? validator;

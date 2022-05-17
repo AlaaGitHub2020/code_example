@@ -1,14 +1,14 @@
+import 'package:code_example/data/local_data/local_helper.dart';
+import 'package:code_example/generated/l10n.dart';
+import 'package:code_example/logic/blocs/cubits/internet_connection_cubit/internet_connection_cubit.dart';
+import 'package:code_example/logic/logger/simple_log_printer.dart';
+import 'package:code_example/presentation/screens/first_screen/first_screen.dart';
+import 'package:code_example/presentation/screens/no_connection_screen/no_connection_screen.dart';
+import 'package:code_example/presentation/screens/second_screen/second_screen.dart';
+import 'package:code_example/presentation/screens/third_screen/third_screen.dart';
+import 'package:code_example/presentation/widgets/snackbars.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:friflex_test/data/local_data/local_helper.dart';
-import 'package:friflex_test/generated/l10n.dart';
-import 'package:friflex_test/logic/blocs/cubits/internet_connection_cubit/internet_connection_cubit.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
-import 'package:friflex_test/presentation/screens/first_screen/first_screen.dart';
-import 'package:friflex_test/presentation/screens/no_connection_screen/no_connection_screen.dart';
-import 'package:friflex_test/presentation/screens/second_screen/second_screen.dart';
-import 'package:friflex_test/presentation/screens/third_screen/third_screen.dart';
-import 'package:friflex_test/presentation/widgets/snackbars.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 final log = getLogger();

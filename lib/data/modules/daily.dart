@@ -1,6 +1,6 @@
-import 'package:friflex_test/data/modules/feels_like.dart';
-import 'package:friflex_test/data/modules/temp.dart';
-import 'package:friflex_test/data/modules/weather.dart';
+import 'package:code_example/data/modules/feels_like.dart';
+import 'package:code_example/data/modules/temp.dart';
+import 'package:code_example/data/modules/weather.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'daily.g.dart';
@@ -50,7 +50,7 @@ class Daily {
   num? windGust;
 
   @JsonKey(name: "weather")
-  List<Weather?> weather;
+  List<Weather?>? weather;
 
   @JsonKey(name: "clouds")
   num? clouds;

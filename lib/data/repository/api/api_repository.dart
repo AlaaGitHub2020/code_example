@@ -1,8 +1,9 @@
 import 'dart:io';
+
+import 'package:code_example/data/repository/api/interceptors/logging_interceptor.dart';
+import 'package:code_example/logic/utilities/config.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:friflex_test/data/repository/api/interceptors/logging_interceptor.dart';
-import 'package:friflex_test/logic/utilities/config.dart';
 
 class APIRepository {
   final BaseOptions _baseOptions = BaseOptions(

@@ -1,10 +1,10 @@
+import 'package:code_example/data/local_data/app_theme.dart';
+import 'package:code_example/logic/blocs/cubits/forecast_data_cubit/forecast_data_cubit.dart';
+import 'package:code_example/logic/blocs/cubits/weather_data_cubit/weather_data_cubit.dart';
+import 'package:code_example/logic/logger/simple_log_printer.dart';
+import 'package:code_example/presentation/screens/third_screen/third_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:friflex_test/data/local_data/app_theme.dart';
-import 'package:friflex_test/logic/blocs/cubits/forecast_data_cubit/forecast_data_cubit.dart';
-import 'package:friflex_test/logic/blocs/cubits/weather_data_cubit/weather_data_cubit.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:friflex_test/presentation/screens/third_screen/third_screen.dart';
 
 class SecondScreenAppbar extends StatefulWidget implements PreferredSizeWidget {
   const SecondScreenAppbar({Key? key})

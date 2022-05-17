@@ -1,5 +1,5 @@
+import 'package:code_example/logic/logger/simple_log_printer.dart';
 import 'package:dio/dio.dart';
-import 'package:friflex_test/logic/logger/simple_log_printer.dart';
 import 'package:logger/logger.dart';
 
 class LoggingInterceptor extends Interceptor {

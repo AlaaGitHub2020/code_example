@@ -10,8 +10,8 @@ WeatherInfo _$WeatherInfoFromJson(Map<String, dynamic> json) => WeatherInfo(
       json['coord'] == null
           ? null
           : Coord.fromJson(json['coord'] as Map<String, dynamic>),
-      (json['weather'] as List<dynamic>)
-          .map((e) =>
+      (json['weather'] as List<dynamic>?)
+          ?.map((e) =>
               e == null ? null : Weather.fromJson(e as Map<String, dynamic>))
           .toList(),
       json['base'] as String?,

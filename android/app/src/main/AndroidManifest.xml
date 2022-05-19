@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alaa_mashkouk.code_example">
    <application
-        android:label="friflex_test"
+        android:label="Weather"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 ///the app colors here
 class AppColors {
   ///Dark Colors
+  static final HexColor backgroundColorBlue = HexColor("#B2E8F1");
   static final HexColor darkModeBackgroundColor = HexColor("#000000");
   static const MaterialColor darkErrorColor = Colors.red;
   static final HexColor darkBtnColor = HexColor("#123232");

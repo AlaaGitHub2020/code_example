@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:code_example/domain/core/utilities/config.dart';
 import 'package:code_example/domain/core/utilities/logger/simple_log_printer.dart';
 import 'package:code_example/presentation/core/app_widget.dart';
@@ -13,24 +11,18 @@ import 'package:logger/logger.dart';
 final log = getLogger();
 
 void main() {
-  FlutterNativeSplash.removeAfter(initialization);
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  addFontLicense();
+  prepareTheLogger();
+  serverSetup();
   runApp(
     DevicePreview(
       enabled: !kReleaseMode,
       builder: (context) => const AppWidget(),
     ),
   );
-}
-
-Future<void> initialization(BuildContext context) async {
-  if (Platform.isAndroid || Platform.isIOS) {
-    WidgetsFlutterBinding.ensureInitialized();
-    addFontLicense();
-    prepareTheLogger();
-    serverSetup();
-  } else if (kIsWeb) {
-  } else if (Platform.isWindows) {
-  } else {}
+  FlutterNativeSplash.remove();
 }
 
 void addFontLicense() {
